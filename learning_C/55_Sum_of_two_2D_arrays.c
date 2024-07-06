@@ -1,3 +1,7 @@
+/* programe_55 */ 
+/* author Ahsan ul haq */
+/* roll number 22069120033 */
+//Adding two 2D arrays
 #include <stdio.h>
 
 int main() 
