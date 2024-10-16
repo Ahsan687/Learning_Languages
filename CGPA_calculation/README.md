@@ -56,7 +56,16 @@ gcc cgpa_calculator.c -o cgpa_calculator
 ```bash
 ./cgpa_calculator
 ```
-
+#### OR 
+## Simply Download the cgpa_calculator.exe
+## change directory to the download folder 
+```bash
+cd path\to\your\file
+```
+## then run the code
+```bash
+cgpa_calculator
+```
 Once you run the program, you will be prompted to input your data as follows:
 
 1. Enter the number of subjects you have.
