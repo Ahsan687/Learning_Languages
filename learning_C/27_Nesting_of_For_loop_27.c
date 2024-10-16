@@ -13,12 +13,12 @@ int main()
     scanf("%d", &end);
     printf("Enter the value of increment: ");
     scanf("%d", &j);
-    for ( r = i; r < end ; r = r+j)
+    for ( r = i; r <= end ; r = r+j)
     {
         for(c = i ;c <= end ; c=c+j)
         {
             sum = r+c;
-            printf("%d,%d,sum=%d\n",r,c,sum);
+            printf("sum of %d,%d,=%d\n",r,c,sum);
         }
     }
     return 0;

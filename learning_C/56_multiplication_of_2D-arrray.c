@@ -8,7 +8,7 @@
 int main()
 {
     // defining integers for rows and columns
-    int r1, r2, c1, c2;
+    int r1, r2, c1, c2,sum;
 
     // defining array1 dimensions
     printf("Enter the dimensions of array1: ");
@@ -43,30 +43,33 @@ int main()
     {
         for (int j = 0; j < c1; j++)
         {
-            printf("Enter value of m1[%d][%d]: ", i, j);
-            scanf("%f", &m1[i][j]);
+            printf("Enter value of m1[%d][%d]: ,m2[%d][%d]: ", i, j,i, j);
+            scanf("%f %f", &m1[i][j],&m2[i][j]);
         }
     }
 
-    // input elements of matrix 2
-    printf("Enter the elements of m2:\n");
-    for (int i = 0; i < r2; i++)
-    {
-        for (int j = 0; j < c2; j++)
-        {
-            printf("Enter value of m2[%d][%d]: ", i, j);
-            scanf("%f", &m2[i][j]);
-        }
-    }
+    // // input elements of matrix 2
+    // printf("Enter the elements of m2:\n");
+    // for (int i = 0; i < r2; i++)
+    // {
+    //     for (int j = 0; j < c2; j++)
+    //     {
+    //         printf("Enter value of m2[%d][%d]: ", i, j);
+    //         scanf("%f", &m2[i][j]);
+    //     }
+    // }
 
     // product block
+    sum = 0 ;
     for (int i = 0; i < r1; i++)
     {
         for (int j = 0; j < c2; j++)
         {
             for (int k = 0; k < c1; k++)
             {
-                m12[i][j] += m1[i][k] * m2[k][j];
+                m12[i][j] += m1[i][k]*m2[k][j];
+                // sum = sum + m1[i][k] * m2[k][j];
+                // m12[i][j] = sum;
             }
         }
     }
@@ -76,7 +79,7 @@ int main()
     {
         for (int j = 0; j < c2; j++)
         {
-            printf("%8.2f ", m12[i][j]);
+            printf("%.2f ", m12[i][j]);
         }
         printf("\n");
     }

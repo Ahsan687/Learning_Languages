@@ -18,16 +18,16 @@ int main()
     int i;
     for (i = 0; i < n; i++) 
     {
-        printf("Enter the value of element mat_1[%d]: ", i);
-        scanf("%d", &mat_1[i]);
+        printf("Enter the value of element mat_1[%d] , mat_2[%d]: ", i,i);
+        scanf("%d %d", &mat_1[i],&mat_2[i]);
     }
 
     // Similarly for mat_2 elements
-    for (i = 0; i < n; i++) 
-    {
-        printf("Enter the value of element mat_2[%d]: ", i);
-        scanf("%d", &mat_2[i]);
-    }
+    // for (i = 0; i < n; i++) 
+    // {
+    //     printf("Enter the value of element mat_2[%d]: ", i);
+    //     scanf("%d", &mat_2[i]);
+    // }
 
     // formating the mat_3[n] to avoid any junk in output
 
@@ -42,9 +42,9 @@ int main()
 
     // Print the values of mat_3
 
-    printf("Values of the summed matrix mat_3:\n");
+    printf("Values of the summed matrix mat_3\n:");
     for (i = 0; i < n; i++) {
-        printf("mat_3[%d] = %d", i, mat_3[i]);
+        printf("mat_3[%d] = %d\n", i, mat_3[i]);
     }
 
     return 0;
