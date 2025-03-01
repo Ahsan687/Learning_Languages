@@ -1,4 +1,4 @@
-#defining a function ist 
+#defining a function 
 def f(x, y):
     return x + y**2
 
